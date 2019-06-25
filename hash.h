@@ -1,7 +1,8 @@
 #include <iostream>
 #include <cstdlib>
 #include <string>
-
+#include <list>
+#include <vector>
 using namespace std;
 
 #ifndef HASH_H
