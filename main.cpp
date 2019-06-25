@@ -34,6 +34,9 @@ void PrintStudent() //USE?
 int main(int argc, char *argv[])
 {
 	hash Hashy;
+	
+	Hashy.AddStudent("John","Greim", "1", "15");
+	Hashy.AddStudent("Matthew","Petros", "10", "60");
 	Hashy.PrintTable();
 	
 	/*
