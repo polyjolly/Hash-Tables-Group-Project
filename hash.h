@@ -3,6 +3,8 @@
 #include <string>
 #include <list>
 #include <vector>
+#include "Student.h"
+
 using namespace std;
 
 #ifndef HASH_H
@@ -14,10 +16,24 @@ class hash
 		int Hash(string key);
 		//Constructor
 		hash();
-		
+		void AddStudent(string fname, string lname, string id, string cred);
+		int NumberOfItemsInIndex(int index);
+		void PrintTable();
+	
 	private:
-		int tableSize;
+		static const int tableSize = 10;
 		
+		struct student
+		{
+			string first;
+			string last;
+			string id;
+			string credits;
+			student* next;
+		};
+		
+	
+		student* HashTable[tableSize];	
 };
 
 #endif //HASH_H

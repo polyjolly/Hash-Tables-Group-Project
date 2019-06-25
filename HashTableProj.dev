@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=7
+UnitCount=3
 
 [VersionInfo]
 Major=1
@@ -60,30 +60,10 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit2]
-FileName=..\..\..\Desktop\Hash tables group\Student.cpp
-CompileCpp=1
-Folder=HashTableProj
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
 [Unit3]
-FileName=..\..\..\Desktop\Hash tables group\Student.h
+FileName=hash.cpp
 CompileCpp=1
-Folder=HashTableProj
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit4]
-FileName=..\..\..\Desktop\Hash tables group\Student_List.cpp
-CompileCpp=1
-Folder=HashTableProj
+Folder=
 Compile=1
 Link=1
 Priority=1000
@@ -91,9 +71,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit5]
-FileName=..\..\..\Desktop\Hash tables group\Student_List.h
+FileName=hash.cpp
 CompileCpp=1
-Folder=HashTableProj
+Folder=
 Compile=1
 Link=1
 Priority=1000
@@ -112,6 +92,26 @@ BuildCmd=
 
 [Unit7]
 FileName=hash.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit4]
+FileName=hash.h
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit2]
+FileName=hash.h
 CompileCpp=1
 Folder=
 Compile=1
