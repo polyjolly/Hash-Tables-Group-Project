@@ -91,6 +91,7 @@ void hash::FindLastName(string name)
 	string first;
 	string id;
 	string credits;
+	int count;
  	
 	Student* Ptr = HashTable[index];
 	
@@ -106,7 +107,6 @@ void hash::FindLastName(string name)
 			credits = Ptr->credits;
 		}	
 		Ptr = Ptr->next;
-		
 	}
 	if(foundname == true)
 	{
