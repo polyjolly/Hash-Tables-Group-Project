@@ -83,6 +83,35 @@ void hash::AddStudent(string fname, string lname, string idnum, string cred)
 	
 }
 
+void hash::FindLastName(string name)
+{
+	int index = Hash(name);
+	bool foundname = false;
+	string last;
+	
+	Student* Ptr = HashTable[index];
+	
+	while(Ptr != NULL)
+	{
+		if(Ptr->last == name)
+		{
+			foundname = true;
+			last = Ptr->last;
+		}	
+		Ptr = Ptr->next;
+	}
+	if(foundname == true)
+	{
+		cout<<"Key = "<< last<<endl;
+	}
+	else if(foundname == false)
+	{
+		cout<<name<<" was not found!\n";
+	}
+	
+}
+
+
 int hash::Hash(string key)
 {
 	int hash = 0;

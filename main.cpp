@@ -24,7 +24,7 @@ int DisplayMenu()
 	return choice;
 }
 
-void addStudent()//USE?
+void addStudent()
 {
 	string firstname;
 	string lastname; 
@@ -53,8 +53,14 @@ void addStudent()//USE?
 	}
 }
 
-void PrintStudent() //USE?
+void PrintStudent()
 {
+	string lastname;
+	
+	cout<<"Enter The Last Name of Student to Print (Last name = key)"<<endl;
+	cin>>lastname;
+	
+	StudentDatabase.FindLastName(lastname);
 	
 }
 

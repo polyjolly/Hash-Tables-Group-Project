@@ -17,20 +17,10 @@ class hash
 		void AddStudent(string fname, string lname, string id, string cred);
 		int NumberOfItemsInIndex(int index);
 		void PrintTable();
+		void FindLastName(string name);
 	
 	private:
 		static const int tableSize = 10;
-		
-	/*	struct student
-		{
-			string first;
-			string last;
-			string id;
-			string credits;
-			student* next;
-		};*/
-		
-	
 		Student* HashTable[tableSize];	
 };
 
