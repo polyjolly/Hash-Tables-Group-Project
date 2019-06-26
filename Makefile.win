@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o hash.o $(RES)
-LINKOBJ  = main.o hash.o $(RES)
+OBJ      = main.o hash.o Student.o $(RES)
+LINKOBJ  = main.o hash.o Student.o $(RES)
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
@@ -30,3 +30,6 @@ main.o: main.cpp
 
 hash.o: hash.cpp
 	$(CPP) -c hash.cpp -o hash.o $(CXXFLAGS)
+
+Student.o: Student.cpp
+	$(CPP) -c Student.cpp -o Student.o $(CXXFLAGS)

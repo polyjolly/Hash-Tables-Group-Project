@@ -8,8 +8,8 @@ Student::Student()
 {
 	first = "";
 	last = "";
-	id = 0;
-	credits = 0;
+	id = "0";
+	credits = "0";
 }
 
 Student::Student(int idnum, string fname, string lname, int cred)
@@ -55,12 +55,12 @@ string Student::GetName()
 	return first + " " + last;
 }
 
-int Student::GetID()
+string Student::GetID()
 {
 	return id;
 }
 		
-int Student::GetCredits()
+string Student::GetCredits()
 {
 	return credits;
 }

@@ -9,10 +9,10 @@ using namespace std;
 class Student
 {
 	private:
-		int id;
+		string id;
 		string first;
 		string last;
-		int credits;
+		string credits;
 	public:	
 		Student();
 		Student(int, string, string, int);
@@ -22,8 +22,8 @@ class Student
 		void SetCredits(int);
 		
 		string GetName();
-		int GetID();
-		int GetCredits();
+		string GetID();
+		string GetCredits();
 		
 		void print();
 		
