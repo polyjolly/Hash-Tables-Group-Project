@@ -8,23 +8,28 @@ using namespace std;
 
 class Student
 {
-	private:
+	
+		
+	public:	
+		//construct
+		Student();
+		//overload
+		Student(int, string, string, int);
+		//mutator
+		void SetName(string, string);
+		void SetID(int);
+		void SetCredits(int);
+		//accessor
+		string GetName();
+		string GetID();
+		string GetCredits();
+		//vars
 		string id;
 		string first;
 		string last;
 		string credits;
-	public:	
-		Student();
-		Student(int, string, string, int);
-		
-		void SetName(string, string);
-		void SetID(int);
-		void SetCredits(int);
-		
-		string GetName();
-		string GetID();
-		string GetCredits();
-		
+		Student* next;
+		//print
 		void print();
 		
 };

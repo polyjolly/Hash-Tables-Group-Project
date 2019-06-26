@@ -7,7 +7,7 @@ hash::hash()
 {
 	for(int i = 0; i < tableSize; i++)
 	{
-		HashTable[i] = new student;
+		HashTable[i] = new Student;
 		HashTable[i]->first = "None";
 		HashTable[i]->last = "None";
 		HashTable[i]->id = "None";
@@ -43,7 +43,7 @@ int hash::NumberOfItemsInIndex(int index)
 	else
 	{
 		count++;
-		student* Ptr = HashTable[index];
+		Student* Ptr = HashTable[index];
 		while(Ptr->next != NULL)
 		{
 			count++;
@@ -67,8 +67,8 @@ void hash::AddStudent(string fname, string lname, string idnum, string cred)
 	}
 	else
 	{
-		student* Ptr = HashTable[index];
-		student* n = new student;
+		Student* Ptr = HashTable[index];
+		Student* n = new Student;
 		n->first = fname; 
 		n->last = lname;
 		n->id = idnum;
@@ -93,7 +93,7 @@ int hash::Hash(string key)
 	for(int i = 0; i < key.length(); i++)
 	{
 		hash = hash + (int)key[i];
-		cout<< "Hash = " <<hash<<endl;
+		//cout<< "Hash = " <<hash<<endl;
 	}
 	
 	index = hash % tableSize;

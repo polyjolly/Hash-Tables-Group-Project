@@ -1,8 +1,6 @@
 #include <iostream>
 #include <cstdlib>
 #include <string>
-#include <list>
-#include <vector>
 #include "Student.h"
 
 using namespace std;
@@ -23,17 +21,17 @@ class hash
 	private:
 		static const int tableSize = 10;
 		
-		struct student
+	/*	struct student
 		{
 			string first;
 			string last;
 			string id;
 			string credits;
 			student* next;
-		};
+		};*/
 		
 	
-		student* HashTable[tableSize];	
+		Student* HashTable[tableSize];	
 };
 
 #endif //HASH_H
