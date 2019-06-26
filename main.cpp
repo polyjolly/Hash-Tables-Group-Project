@@ -57,7 +57,7 @@ void PrintStudent()
 {
 	string lastname;
 	
-	cout<<"Enter The Last Name of Student to Print (Last name = key)"<<endl;
+	cout<<"Enter The Last Name of Student to Print (Last name = key): ";
 	cin>>lastname;
 	
 	StudentDatabase.FindLastName(lastname);
@@ -67,7 +67,6 @@ void PrintStudent()
 int main(int argc, char *argv[])
 {
 	
-
 	int choice = 0;
 	
 	//Performs the actions chosen by the user in the main menu

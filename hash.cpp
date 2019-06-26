@@ -24,10 +24,10 @@ void hash::PrintTable()
 		number = NumberOfItemsInIndex(i);
 		cout<<"----------------";
 		cout<<"index = "<< i << endl;
-		cout<<HashTable[i]->first<< endl;
-		cout<<HashTable[i]->last<< endl;
-		cout<<HashTable[i]->id<< endl;
-		cout<<HashTable[i]->credits<< endl;
+		cout<<"First: "<<HashTable[i]->first<< endl;
+		cout<<"Last: "<<HashTable[i]->last<< endl;
+		cout<<"ID: "<<HashTable[i]->id<< endl;
+		cout<<"Credits: "<<HashTable[i]->credits<< endl;
 		cout<<"# of items = "<< number << endl;
 	}
 }
@@ -88,21 +88,35 @@ void hash::FindLastName(string name)
 	int index = Hash(name);
 	bool foundname = false;
 	string last;
-	
+	string first;
+	string id;
+	string credits;
+ 	
 	Student* Ptr = HashTable[index];
 	
 	while(Ptr != NULL)
 	{
+	
 		if(Ptr->last == name)
 		{
 			foundname = true;
 			last = Ptr->last;
+			first = Ptr->first;
+			id = Ptr->id;
+			credits = Ptr->credits;
 		}	
 		Ptr = Ptr->next;
+		
 	}
 	if(foundname == true)
 	{
-		cout<<"Key = "<< last<<endl;
+		cout<<"Found Key = "<<last<<endl;
+		cout<<"---------------"<<endl;
+		cout<<"Attributes: "<<endl;
+		cout<<"First: "<<first<<endl;
+		cout<<"Last: "<<last<<endl;
+		cout<<"ID: "<<id<<endl;
+		cout<<"Credits: "<<credits<<endl;
 	}
 	else if(foundname == false)
 	{
