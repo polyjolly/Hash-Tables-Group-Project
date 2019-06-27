@@ -16,7 +16,7 @@ int DisplayMenu()
 	cout<<"=======Student Database=======\n"
 		<<"1. Insert a New Student (Assign Values to Attributes)\n"
 		<<"2. Find a Student by Last Name\n"
-		<<"3. Print Enter Table\n"
+		<<"3. Print Entire Table\n"
 		<<"4. Exit\n\n"
 		<<"Select an option: ";
 	
